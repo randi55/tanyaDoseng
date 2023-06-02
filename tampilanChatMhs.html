@@ -7,8 +7,9 @@
   <title>Chat Mahasiswa</title>
   <link rel="stylesheet" href="./bootstrap-5.3.0-alpha3-dist/css/bootstrap.css">
   <link rel="stylesheet" href="./assets/css/tampilanChatMhs.css">
+  <link rel="stylesheet" href="./assets/css/chatApp.css">
 </head>
-<body>
+<body class="vh-100" >
   <!-- navbar -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary" style="box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);">
     <div class="container">
@@ -31,7 +32,7 @@
   </nav>
 
   <div class="contianer">
-    <div class="row">
+    <div class="row" style="height: 520px;">
       <!-- namaUser -->
       <div class="col" style="background: #F7F7F7;">
         <div class="row">
@@ -91,39 +92,99 @@
       </div>
 
       <!-- chat -->
-      <div class="col">
+      <div class="col-6" style="background-color: #EDF0F7;">
+        <!-- Person selector: this contains buttons for user to select whether to chat as John or Jane -->
+      <div class="nama-tujuan">
         <div class="row">
-          <div class="col">
-            <img src="./assets/image/Logo Tanya Dosen.png" alt="">
+          <div class="col-1">
+            <img src="./assets/image/Frame 19.png" alt="">
+          </div>
+          <div class="col" style="padding-left: 20px;">
+            <h4 style="margin: 0px;">Drs. Subedjo</h4>
+            <p style="margin: 0px;">Dosen</p>
           </div>
         </div>
-        <div class="row">
-          <div class="col">
-            <img src="./assets/image/Logo Tanya Dosen.png" alt="">
-          </div>
+      </div>
+    <div class="chat-container py-2">
+      <div class="chat-messages" style="height: 440px;">
+        <!-- <div class="message blue-bg">
+          <div class="message-sender">John</div>
+          <div class="message-text">Hey Jane, what's up?</div>
+          <div class="message-timestamp">10:30 AM</div>
         </div>
-        <div class="row">
-          <div class="col">
-            <img src="./assets/image/Logo Tanya Dosen.png" alt="">
-          </div>
-        </div>
+        <div class="message gray-bg">
+          <div class="message-sender">Jane</div>
+          <div class="message-text">Not much, just living the dream. How about you?</div>
+          <div class="message-timestamp">10:35 AM</div>
+        </div> -->
+      </div>
+
+      <form class="chat-input-form">
+        <input type="text" class="chat-input" required placeholder="Ketik Sesuatu"/>
+        <button type="submit" class="button send-button"><img src="./assets/image/send 1.png" alt=""></button>
+      </form>
+    </div>
         
       </div>
+
+
 <!-- template -->
       <div class="col" style="background: #F7F7F7;">
         <div class="row">
           <div class="col">
-            <img src="./assets/image/Logo Tanya Dosen.png" alt="">
+            <h5 style="text-align: center; color: #5D5A88;" class="mt-2">Template chat yang tersedia</h5>
           </div>
         </div>
-        <div class="row">
-          <div class="col">
-            <img src="./assets/image/Logo Tanya Dosen.png" alt="">
+        <div style="background-color: #FFFFFF; height: 500px;">
+          <div class="row">
+            <div class="col">
+              <div class="template" style="height: 440px; overflow-y: scroll;">
+                <div class="dropdown mb-3">
+                  <button type="button" style="color: #8D8BA7; font-weight:600; background: #EDF0F7;" class="btn" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                    Mengkonfirmasi Jadwal Kuliah <img src="./assets/image/Arrow - Down 2.png" alt="">
+                  </button>
+                  <form style="background-color: #EDF0F7;" class="dropdown-menu p-4">
+                    <div class="mb-3">
+                      <p style="color: #5D5A88;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias soluta laudantium nihil, voluptatibus doloremque magnam in, repellat excepturi aliquid eveniet et natus rerum totam quibusdam repudiandae. Omnis alias temporibus fuga?</p>
+                    </div>
+                    <button id="btnTemplate" type="button" class="btn-satu btn" style="background-color: #004A8E; color:white;">Pakai Template</button>
+                  </form>
+                </div>
+                
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <img src="./assets/image/Logo Tanya Dosen.png" alt="">
+          <div class="row p-4">
+            <!-- Button trigger modal -->
+            <button type="button" style="color: white; background-color: #004A8E;" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Buat Template Baru
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Buat Template Baru</h1>
+                    
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form class="template-input-form">
+                      <p style="margin-bottom: 0;"><b>Judul Template</b></p>
+                      <input type="text" class="template-input-judul" required placeholder="Ketik Judul Template" />
+                      <p style="margin-top: 10px; margin-bottom: 0;"><b>Chat Template</b></p>
+                      <textarea name="template-chat" id="chatTemplateInput" cols="55" rows="10" placeholder="Ketik Template Pesan"></textarea>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Simpan Template</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
           </div>
         </div>
         
@@ -132,5 +193,6 @@
   </div>
 
   <script src="./bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.js"></script>
+  <script src="./assets/js/app.js"></script>
 </body>
 </html>

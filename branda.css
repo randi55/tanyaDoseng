@@ -42,6 +42,18 @@ body{
 .imghp{
   margin: 50px;
 }
+.btn-modal{
+  background-color: #004A8E;
+  color: white;
+}
+.btn-pinang {
+  color: white;
+  background-color: #FF6A26;
+}
+.input_login{
+  margin-left: 60px;
+}
+
 footer{
   background: #FFA500;
   padding: 10px;

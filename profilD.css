@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+.kolom {
+    background-color: white;
+    border-radius: 20px;
+}
+.button_kolom {
+    
+    width: 250px;
+    height: 40px;
+    margin-left: 45px;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nidn {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.performa {
+    font-size: 16px;
+}
+
+img {
+    border-radius: 10px;
+}
+
+.accordion {
+    width: 800px;
+    border-radius: 10px;
+}
+
+.accordion-button, 
+.accordion-item {
+    background-color: #EDF0F7;
+}
+
+.accordion-button {
+    color: #3D3D3D;
+    font-weight: bold;
+}
+
+.accordion-item {
+    margin-bottom: 20px;
+}
+
+footer{
+    background: #FFA500;
+    padding: 10px;
+    padding: 10px 20px;
+    color: #F5F7D4;
+    text-align: center;
+  }

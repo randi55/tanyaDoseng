@@ -7,13 +7,15 @@ const chatMessages = document.querySelector('.chat-messages')
 const chatInputForm = document.querySelector('.chat-input-form')
 const chatInput = document.querySelector('.chat-input')
 const clearChatBtn = document.querySelector('.clear-chat-button')
+const btnBlacklist = document.querySelector('.btn-blacklist')
+const btnReport = document.querySelector('.btn-report')
 
 const messages = JSON.parse(localStorage.getItem('messages')) || []
 
 const createChatMessageElement = (message) => `
 <div class="d-flex ${message.sender === 'Jane' ? 'justify-content-end' : 'justify-content-start'}">
   <div class="message ${message.sender === 'Jane' ? 'blue-bg' : 'gray-bg'}">
-  <div class="message-sender">${message.sender === 'Jane' ? '' : 'John'}</div>
+  <div class="message-sender">${message.sender === 'Jane' ? '' : 'Iqbal Revianda'}</div>
     <div class="message-text">${message.text}</div>
     <div class="message-timestamp">${message.timestamp}</div>
   </div>
@@ -22,7 +24,17 @@ const createChatMessageElement = (message) => `
 
 window.onload = () => {
   messages.forEach((message) => {
-    chatMessages.innerHTML += createChatMessageElement(message)
+    if (message.text != undefined){
+      chatMessages.innerHTML += createChatMessageElement(message)
+    }
+  })
+
+  btnBlacklist.addEventListener('click', function(){
+    alert('Iqbal Revianda masuk ke daftar blacklist')
+  })
+  
+  btnReport.addEventListener('click', function(){
+    alert('Iqbal Revianda masuk ke daftar report')
   })
 }
 

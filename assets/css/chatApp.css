@@ -57,6 +57,12 @@ body {
   overflow-y: scroll;
 }
 
+.nama-mhs{
+  color: black;
+  font-weight: 500;
+  font-size: 24px;
+}
+
 .chat-messages::-webkit-scrollbar {
   display: none;
 }

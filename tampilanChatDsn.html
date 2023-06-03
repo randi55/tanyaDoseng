@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="./assets/css/tampilanChatMhs.css">
   <link rel="stylesheet" href="./assets/css/chatApp.css">
 </head>
-<body class="vh-100" style="overflow: hidden;">
+<body class="vh-100">
   <!-- navbar -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary" style="box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);">
     <div class="container">
@@ -20,13 +20,14 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <img class="ms-auto" src="./assets/image/Line 2.png" alt="">
-        <a class="navbar-brand ms-3" href="#"><img src="./assets/image/gbr-user.png" alt=""></a>
+        <a class="navbar-brand ms-3" href="#"><img src="./assets/image/dediCircle.png" width="55" alt=""></a>
         <a style="margin-right: 150px;">
-          <span style="font-weight: bold;">Iqbal Revianda</span>
+          <span style="font-weight: bold;">Dedy Setiawan, S.Kom., M.IT.</span>
           <br>
-          <span style="font-size: 14px;">Mahasiswa</span>
+          <span style="font-size: 14px;">Dosen</span>
         </a>
-        <button class="btn btn-primary btn-masuk" type="submit">Keluar</button>
+        <a href="./beranda.html" class="btn btn-primary btn-masuk">Keluar</a>
+        
       </div>
     </div>
   </nav>
@@ -34,17 +35,17 @@
   <div class="contianer">
     <div class="row" style="height: 520px;">
       <!-- namaUser -->
-      <div class="col" style="background: #F7F7F7;">
+      <div class="col-3" style="background: #F7F7F7;">
         <div class="row">
           <div class="col d-flex justify-content-center mt-3">
             <div class="user-contact-list">
               <div class="row">
-                <div class="col-2">
-                  <img src="./assets/image/Frame 19.png" alt="">
+                <div class="col-3">
+                  <img src="./assets/image/gbr-user.png" alt="">
                 </div>
                 <div class="col">
-                  <span style="font-weight: bold;">Ronald Richards</span><br>
-                  <span>Lorem Ispansum</span>
+                  <span style="font-weight: bold;">Iqbal Revianda</span><br>
+                  <span>Mahasiswa</span>
                 </div>
                 <div class="col-3">
                   <span>09.00</span>
@@ -53,48 +54,71 @@
             </div>
           </div>
 
-          <div class="col d-flex justify-content-center mt-3">
-            <div class="user-contact-list">
-              <div class="row">
-                <div class="col-2">
-                  <img src="./assets/image/Frame 192.png" alt="">
-                </div>
-                <div class="col">
-                  <span style="font-weight: bold;">Cameron Williamson</span><br>
-                  <span>Lorem Ispansum</span>
-                </div>
-                <div class="col-3">
-                  <span>09.00</span>
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <div class="col d-flex justify-content-center mt-3">
-            <div class="user-contact-list">
-              <div class="row">
-                <div class="col-2">
-                  <img src="./assets/image/Frame 193.png" alt="">
-                </div>
-                <div class="col">
-                  <span style="font-weight: bold;">Darrell Steward</span><br>
-                  <span>Lorem Ispansum</span>
-                </div>
-                <div class="col-3">
-                  <span>09.00</span>
-                </div>
-              </div>
-            </div>
-          </div>
+          
         </div>
         
         
       </div>
 
       <!-- chat -->
-      <div class="col-6" style="background-color: #EDF0F7;">
+      <div class="col-9" style="background-color: #EDF0F7;">
         <!-- Person selector: this contains buttons for user to select whether to chat as John or Jane -->
-        <div class="chat-container py-2">
+        <div class="nama-tujuan">
+          <div class="row">
+            <div class="col-1">
+              <img src="./assets/image/gbr-user.png" width="55px" alt="">
+            </div>
+            <div class="col">
+              <!-- Button trigger modal -->
+            <a type="button" style="text-decoration: none;" class="nama-mhs" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Iqbal Revianda
+            </a>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <div class="row">
+                      <div class="col-3">
+                        <img src="./assets/image/gbr-user.png" alt="">
+                      </div>
+                      <div class="col">
+                        <h4>Iqbal Revianda</h4>
+                        <h6>Mahasiswa</h6>
+                      </div>
+                    </div>
+                    
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form class="template-input-form">
+                      <table>
+                        <tr>
+                          <td>NIM</td>
+                          <td style="padding-left: 40px;">: F1E121049</td>
+                        </tr>
+                        <tr>
+                          <td>Status</td>
+                          <td style="padding-left: 40px;">: Mahasiswa (Semester 4)</td>
+                        </tr>
+                      </table>
+                      <div class="modal-footer d-flex justify-content-center">
+                        <button type="button" class="btn btn-blacklist btn-primary" data-bs-dismiss="modal">Blacklist</button>
+                        <button type="button" class="btn btn-report" style="color: white; background-color: #FF6A26;" data-bs-dismiss="modal">Report</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+              <p style="margin: 0px;">Mahasiswa</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="chat-container py-2 px-2">
           <div class="chat-messages" style="height: 440px;">
             <!-- <div class="message blue-bg">
               <div class="message-sender">John</div>
@@ -110,28 +134,9 @@
 
           <form class="chat-input-form">
             <input type="text" class="chat-input" required placeholder="Ketik Sesuatu" />
-            <button type="submit" class="button send-button">Send</button>
+            <button type="submit" class="button send-button"><img src="./assets/image/send 1.png" alt=""></button>
           </form>
         </div>
-      </div>
-<!-- template -->
-      <div class="col" style="background: #F7F7F7;">
-        <div class="row">
-          <div class="col">
-            <img src="./assets/image/Logo Tanya Dosen.png" alt="">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <img src="./assets/image/Logo Tanya Dosen.png" alt="">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <img src="./assets/image/Logo Tanya Dosen.png" alt="">
-          </div>
-        </div>
-        
       </div>
     </div>
   </div>

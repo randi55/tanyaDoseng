@@ -16,7 +16,7 @@ const messages = JSON.parse(localStorage.getItem('messages')) || []
 const createChatMessageElement = (message) => `
 <div class="d-flex ${message.sender === 'John' ? 'justify-content-end' : 'justify-content-start'}">
   <div class="message ${message.sender === 'John' ? 'blue-bg' : 'gray-bg'}">
-    <div class="message-sender">${message.sender === 'John' ? '' : 'Jane'}</div>
+    <div class="message-sender">${message.sender === 'John' ? '' : 'Dedy Setiawan, S.Kom., M.IT.'}</div>
     <div class="message-text">${message.text}</div>
     <div class="message-timestamp">${message.timestamp}</div>
   </div>
@@ -50,6 +50,9 @@ window.onload = () => {
   })
   const btnSatu = document.querySelector('.btn-satu')
   btnSatu.addEventListener('click', useTemplate)
+
+  chatInputForm.addEventListener('submit', sendMessage)
+templateInputForm.addEventListener('submit', saveTemplate)
 }
 
 let messageSender = 'John'
@@ -108,5 +111,3 @@ const useTemplate = (e) => {
   chatInput.value = "sadasdads"  
   chatMessages.scrollTop = chatMessages.scrollHeight
 }
-chatInputForm.addEventListener('submit', sendMessage)
-templateInputForm.addEventListener('submit', saveTemplate)

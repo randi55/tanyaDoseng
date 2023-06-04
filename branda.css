@@ -20,13 +20,25 @@ body{
   border-radius: 15px;
 }
 .judulhp{
-  font-size: 50px;
+  font-size: 35px;
   font-weight: bold;
   margin-top: 150px;
   margin-left: 100px;
 }
 .isihp{
   margin-left: 100px;
+  font-size: 20px;
+}
+.judul1hp{
+  font-size: 35px;
+  font-weight: bold;
+  margin-top: 150px;
+  margin-left: 50px;
+}
+.isi1hp{
+  margin-left: 50px;
+  width: 85%;
+  font-size: 24px;
 }
 
 .btn-hp{

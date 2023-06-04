@@ -5,6 +5,7 @@
 }
 body{
   margin: auto;
+  overflow-x: hidden;
 }
 .navbar{
   background-color: #F7F7F7 !important;
@@ -23,10 +24,8 @@ body{
   font-size: 35px;
   font-weight: bold;
   margin-top: 150px;
-  margin-left: 100px;
 }
 .isihp{
-  margin-left: 100px;
   font-size: 20px;
 }
 .judul1hp{
@@ -44,7 +43,6 @@ body{
 .btn-hp{
   background-color: #004A8E;
   color: #FFFFFF;
-  margin-left: 100px;
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 10px;
@@ -64,6 +62,10 @@ body{
 }
 .input_login{
   margin-left: 60px;
+}
+
+.vector {
+  margin-top: 400px;
 }
 
 footer{

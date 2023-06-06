@@ -12,12 +12,12 @@ const templateInputJudul = document.querySelector('.template-input-judul')
 const chatTemplateInput = document.querySelector('#chatTemplateInput')
 const template = document.querySelector('.template')
 
-const messages = JSON.parse(localStorage.getItem('messages')) || []
+const messages = JSON.parse(localStorage.getItem('messagesDan')) || []
 
 const createChatMessageElement = (message) => `
 <div class="d-flex ${message.sender === 'John' ? 'justify-content-end' : 'justify-content-start'}">
   <div class="message ${message.sender === 'John' ? 'blue-bg' : 'gray-bg'}">
-    <div class="message-sender">${message.sender === 'John' ? '' : 'Dedy Setiawan, S.Kom., M.IT.'}</div>
+    <div class="message-sender">${message.sender === 'John' ? '' : 'Daniel Arsa, S.Kom., M.S.I'}</div>
     <div class="message-text">${message.text}</div>
     <div class="message-timestamp">${message.timestamp}</div>
   </div>
@@ -93,7 +93,7 @@ const sendMessage = (e) => {
 
   /* Save message to local storage */
   messages.push(message)
-  localStorage.setItem('messages', JSON.stringify(messages))
+  localStorage.setItem('messagesDan', JSON.stringify(messages))
 
   /* Add message to DOM */
   chatMessages.innerHTML += createChatMessageElement(message)

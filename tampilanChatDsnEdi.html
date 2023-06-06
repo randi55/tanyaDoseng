@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Dosen</title>
+  <link rel="stylesheet" href="./bootstrap-5.3.0-alpha3-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="./assets/css/tampilanChatMhs.css">
+  <link rel="stylesheet" href="./assets/css/chatApp.css">
+</head>
+<body class="vh-100">
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" style="box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="./assets/image/Logo Tanya Dosen.png" alt=""></a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <img class="ms-auto" src="./assets/image/Line 2.png" alt="">
+        <a class="navbar-brand ms-3" href="#"><img src="./assets/image/pakEdiCircle.png" width="55" alt=""></a>
+        <a style="margin-right: 150px;">
+          <span style="font-weight: bold;">Edi Saputra, S.T., M.Sc.</span>
+          <br>
+          <span style="font-size: 14px;">Dosen</span>
+        </a>
+        <a href="./beranda.html" class="btn btn-primary btn-masuk">Keluar</a>
+        
+      </div>
+    </div>
+  </nav>
+
+  <div class="contianer">
+    <div class="row" style="height: 520px;">
+      <!-- namaUser -->
+      <div class="col-3" style="background: #F7F7F7;">
+        <div class="row">
+          <div class="col d-flex justify-content-center mt-3">
+            <div class="user-contact-list">
+              <div class="row">
+                <div class="col-3">
+                  <img src="./assets/image/gbr-user.png" alt="">
+                </div>
+                <div class="col">
+                  <span style="font-weight: bold;">Iqbal Revianda</span><br>
+                  <span>Mahasiswa</span>
+                </div>
+                <div class="col-3">
+                  <span>09.00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          
+        </div>
+        
+        
+      </div>
+
+      <!-- chat -->
+      <div class="col-9" style="background-color: #EDF0F7;">
+        <!-- Person selector: this contains buttons for user to select whether to chat as John or Jane -->
+        <div class="nama-tujuan">
+          <div class="row">
+            <div class="col-1">
+              <img src="./assets/image/gbr-user.png" width="55px" alt="">
+            </div>
+            <div class="col">
+              <!-- Button trigger modal -->
+            <a type="button" style="text-decoration: none;" class="nama-mhs" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Iqbal Revianda
+            </a>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <div class="row">
+                      <div class="col-3">
+                        <img src="./assets/image/gbr-user.png" alt="">
+                      </div>
+                      <div class="col">
+                        <h4>Iqbal Revianda</h4>
+                        <h6>Mahasiswa</h6>
+                      </div>
+                    </div>
+                    
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form class="template-input-form">
+                      <table>
+                        <tr>
+                          <td>NIM</td>
+                          <td style="padding-left: 40px;">: F1E121049</td>
+                        </tr>
+                        <tr>
+                          <td>Status</td>
+                          <td style="padding-left: 40px;">: Mahasiswa (Semester 4)</td>
+                        </tr>
+                      </table>
+                      <div class="modal-footer d-flex justify-content-center">
+                        <button type="button" class="btn btn-blacklist btn-primary" data-bs-dismiss="modal">Blacklist</button>
+                        <button type="button" class="btn btn-report" style="color: white; background-color: #FF6A26;" data-bs-dismiss="modal">Report</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+              <p style="margin: 0px;">Mahasiswa</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="chat-container py-2 px-2">
+          <div class="chat-messages" style="height: 440px;">
+            <!-- <div class="message blue-bg">
+              <div class="message-sender">John</div>
+              <div class="message-text">Hey Jane, what's up?</div>
+              <div class="message-timestamp">10:30 AM</div>
+            </div>
+            <div class="message gray-bg">
+              <div class="message-sender">Jane</div>
+              <div class="message-text">Not much, just living the dream. How about you?</div>
+              <div class="message-timestamp">10:35 AM</div>
+            </div> -->
+          </div>
+
+          <form class="chat-input-form">
+            <input type="text" class="chat-input" required placeholder="Ketik Sesuatu" />
+            <button type="submit" class="button send-button"><img src="./assets/image/send 1.png" alt=""></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.js"></script>
+  <script src="./assets/js/tampilanChatDsnEdi.js"></script>
+</body>
+</html>
